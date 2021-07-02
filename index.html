@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa de denuncias ambientales y monocultivos en Costa Rica</title>     
+
+    <!-- Enlace a biblioteca JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <!-- Enlace a hoja CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    
+    <!-- Enlace a biblioteca JavaScript de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>    
+    
+     <!-- Complemento Leaflet.markercluster -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"></script>
+	
+	
+	<!-- Complemento Leaflet.heat -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+	
+	<!-- Enlace a kit de Font Awesome -->
+    <script src="https://kit.fontawesome.com/41b9a1bfbd.js" crossorigin="anonymous"></script>
+	
+	
+	<!-- Enlace a leaflet-providers -->  
+    <script src="js/leaflet-providers.js"></script>    
+	
+
+	
+	<!-- Estilos personalizados-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Mapa de denuncias ambientales en Costa Rica (2018 y 2019) y sitios de interes ambiental</h1>  
+	<div class="column">
+	
+	 <a href="https://github.com/MaureenArg/tarea4_.git">Código fuente</a>
+	 <a href="https://maureenarg.github.io/masinformacion/">Más información</a>
+    <p>
+
+<body>
+		Las siguientes denuncias ambientales fueron recopiladas, en 2018-2019, a través del Sistema Integrado de Trámite y Atención de Denuncias Ambientales (SITADA), este es el sitio oficial de Costa Rica, en donde se puede ingresar y consultar las denuncias o quejas ambientales. <br> <p> En el siguiente mapa se contrastaron 534 denuncias ambientales, con otras capas de interes ambiental con el fin de identificar ecosistemas amenazados y sitios con gran incidencia de denuncias, se espera que este sea un aporte a la toma de decisiones.  <td><a href="http://www.sitada.go.cr/denunciaspublico/ingreso_denuncias.aspx"><strong>SITADA</strong></a> <br> <p>
+
+</body>		  
+    
+    <!-- Elemento div para contener el mapa Leaflet -->
+    <div id="mapid"></div>
+
+    <!-- Código JavaScript para generar y manejar el mapa Leaflet -->
+    <script src="js/mapas.js"></script>					
+
+</html>
+
+	
+ 
+			
+
+
+	<div class="column">
+`
+ 
+			
+            <!-- Controles para la opacidad de la capa de bio14 -->
+            <h5>Opacidad de la capa del mes más seco: <span id="span-opacity-bio14">0.3</span></h5>
+            <input type='range' id='sld-opacity-bio14' min='0' max='2' step='0.1' value='0.3' onchange='updateOpacitybio14();'>			
+
+  
+        </div>
+    </div>
+</body>
+</html>
