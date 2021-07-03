@@ -23,8 +23,8 @@
 
 /* Ubicacion control de opacidad */
 .column {
-	float: left;
-	width: 80%,
+	float: right;
+	width: 70%,
 }	
 	/* Clear floats after the columns */
 .row:after{
