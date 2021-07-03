@@ -110,8 +110,8 @@ function updateOpacitybio14() {
 
 
 // Capa vectorial de registros agrupados de denuncias
-$.getJSON("https://raw.githubusercontent.com/MaureenArg/datostarea/master/denuncias2.geojson", function(geodata) {
-  
+$.getJSON("https://raw.githubusercontent.com/MaureenArg/datostarea/master/denuncias3.geojson", function(geodata) {
+	
   // Registros denuncias individuales
   
 	var capa_denuncias = L.geoJson(geodata, {
@@ -119,7 +119,7 @@ $.getJSON("https://raw.githubusercontent.com/MaureenArg/datostarea/master/denunc
 			return {'color': "#013220", 'weight': 3}
 	},
     onEachFeature: function(feature, layer) {
-      var popupText = "<strong>CATEGORIA</strong>: " + feature.properties.CATEGORIA_ + "<br>" ;
+      var popupText = "<strong>Tipo de denuncia</strong>: " + feature.properties.TIPO_den + "<br>" ;
       layer.bindPopup(popupText);
 		},
     pointToLayer: function(getJsonPoint, latlng) {
